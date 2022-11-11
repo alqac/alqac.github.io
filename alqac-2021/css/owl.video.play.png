@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head itemscope itemtype="https://schema.org/WebSite">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://150.65.242.92/home/xmlrpc.php">
+
+<title>Page not found &#8211; Nguyen Lab</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Nguyen Lab &raquo; Feed" href="http://150.65.242.92/home/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Nguyen Lab &raquo; Comments Feed" href="http://150.65.242.92/home/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/150.65.242.92\/home\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.6"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://150.65.242.92/home/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='awsm-ead-public-css'  href='http://150.65.242.92/home/wp-content/plugins/embed-any-document/css/embed-public.min.css?ver=2.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://150.65.242.92/home/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='http://150.65.242.92/home/wp-content/themes/education-zone/css/owl.carousel.min.css?ver=5.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-default-css'  href='http://150.65.242.92/home/wp-content/themes/education-zone/css/owl.theme.default.min.css?ver=5.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='education-zone-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C700%7CLato%3A400%2C700%2C900&#038;ver=5.8.6#038;display=fallback' type='text/css' media='all' />
+<link rel='stylesheet' id='education-zone-style-css'  href='http://150.65.242.92/home/wp-content/themes/education-zone/style.css?ver=1.2.5' type='text/css' media='all' />
+        <script>
+            /* <![CDATA[ */
+            var rcewpp = {
+                "ajax_url":"http://150.65.242.92/home/wp-admin/admin-ajax.php",
+                "nonce": "a12ed7177a",
+                "home_url": "http://150.65.242.92/home/",
+                "settings_icon": 'http://150.65.242.92/home/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings.png',
+                "settings_hover_icon": 'http://150.65.242.92/home/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings_hover.png'
+            };
+            /* ]]\> */
+        </script>
+        <script type='text/javascript' src='http://150.65.242.92/home/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="http://150.65.242.92/home/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://150.65.242.92/home/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://150.65.242.92/home/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.6" />
+
+<!-- teachPress -->
+<script type="text/javascript" src="http://150.65.242.92/home/wp-content/plugins/teachpress/js/frontend.js?ver=8.1.5"></script>
+<link type="text/css" href="http://150.65.242.92/home/wp-content/plugins/teachpress/styles/teachpress_front.css?ver=8.1.5" rel="stylesheet" />
+<!-- END teachPress -->
+</head>
+
+<body class="error404 group-blog hfeed no-banner" itemscope itemtype="https://schema.org/WebPage">
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#acc-content">Skip to content (Press Enter)</a>
+        <div class="mobile-header">
+            <div class="container">
+                <div class="menu-opener">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> <!-- menu-opener ends -->
+
+                <div class="site-branding">
+                                        <div class="text-logo">
+                                                <p class="site-title"><a href="http://150.65.242.92/home/">Nguyen Lab</a></p>
+                                                   <p class="site-description">Laboratory conducting research in Deep learning and NLP</p>
+                                            </div>
+                </div> <!-- site-branding ends -->
+            </div> <!-- container ends -->
+
+            <div class="mobile-menu">
+                <form role="search" method="get" class="search-form" action="http://150.65.242.92/home/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>
+                <nav class="main-navigation" role="navigation">
+                    <div class="menu-main-menu-container"><ul id="mobile-primary-menu" class="menu"><li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/home">Homepage</a></li>
+<li id="menu-item-323" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-323"><a href="#">Systems</a>
+<ul class="sub-menu">
+	<li id="menu-item-324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-324"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/systems/covrelex/home/">Covrelex</a></li>
+	<li id="menu-item-325" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-325"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/systems/bert_based_vn_legal_qa/">Vietnamese Legal QA</a></li>
+	<li id="menu-item-526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-526"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/systems/jaist-translation/">JAIST Translation System</a></li>
+</ul>
+</li>
+<li id="menu-item-124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="http://150.65.242.92/home/awards/">Awards</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59"><a href="http://150.65.242.92/home/member-photo/">Member Photos</a>
+<ul class="sub-menu">
+	<li id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a href="http://150.65.242.92/home/internal-links/">Internal Links</a></li>
+</ul>
+</li>
+<li id="menu-item-663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-663"><a href="#">For Students</a>
+<ul class="sub-menu">
+	<li id="menu-item-664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-664"><a href="http://150.65.242.92/home/important-dates/">Timeline for Master’s/Doctoral Degree Completion</a></li>
+	<li id="menu-item-699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-699"><a href="http://150.65.242.92/home/conference_deadlines/">Conference/Journal Ranking and Deadlines</a></li>
+</ul>
+</li>
+<li id="menu-item-583" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-583"><a href="http://150.65.242.92/home/publications/">Publications</a></li>
+<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-167"><a href="http://150.65.242.92/home/interpretable-ai-center/">Interpretable AI Center</a>
+<ul class="sub-menu">
+	<li id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="http://150.65.242.92/home/scidoca2021/">Fifth International Workshop on SCIentific DOCument Analysis (SCIDOCA 2021)</a></li>
+</ul>
+</li>
+<li id="menu-item-409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-409"><a href="http://150.65.242.92/home/news/">News</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://150.65.242.92/home/contact/">Contact</a></li>
+</ul></div>                </nav><!-- #site-navigation -->
+                            </div>
+        </div> <!-- mobile-header ends -->
+            <header id="masthead" class="site-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+                    
+            <div class="header-m">
+                <div class="container">
+                    <div class="site-branding" itemscope itemtype="https://schema.org/Organization">
+                                                                            <p class="site-title" itemprop="name"><a href="http://150.65.242.92/home/" rel="home" itemprop="url">Nguyen Lab</a></p>
+                                                       <p class="site-description" itemprop="description">Laboratory conducting research in Deep learning and NLP</p>
+                                            
+                   </div><!-- .site-branding -->
+                   
+                    <div class="form-section">
+                        <div class="example">                       
+                            <form role="search" method="get" class="search-form" action="http://150.65.242.92/home/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <div class="header-bottom">
+                <div class="container">
+                    <nav id="site-navigation" class="main-navigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">                        
+                        <div class="menu-main-menu-container"><ul id="primary-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/home">Homepage</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-323"><a href="#">Systems</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-324"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/systems/covrelex/home/">Covrelex</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-325"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/systems/bert_based_vn_legal_qa/">Vietnamese Legal QA</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-526"><a href="https://www.jaist.ac.jp/is/labs/nguyen-lab/systems/jaist-translation/">JAIST Translation System</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="http://150.65.242.92/home/awards/">Awards</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59"><a href="http://150.65.242.92/home/member-photo/">Member Photos</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a href="http://150.65.242.92/home/internal-links/">Internal Links</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-663"><a href="#">For Students</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-664"><a href="http://150.65.242.92/home/important-dates/">Timeline for Master’s/Doctoral Degree Completion</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-699"><a href="http://150.65.242.92/home/conference_deadlines/">Conference/Journal Ranking and Deadlines</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-583"><a href="http://150.65.242.92/home/publications/">Publications</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-167"><a href="http://150.65.242.92/home/interpretable-ai-center/">Interpretable AI Center</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="http://150.65.242.92/home/scidoca2021/">Fifth International Workshop on SCIentific DOCument Analysis (SCIDOCA 2021)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-409"><a href="http://150.65.242.92/home/news/">News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://150.65.242.92/home/contact/">Contact</a></li>
+</ul></div>                    </nav><!-- #site-navigation -->
+                </div>
+            </div>
+
+        </header><!-- #masthead -->
+        
+        <div class="page-header">
+		<div class="container">
+	        
+                            <h1 class="page-title">404 Error - Page not Found</h1>
+                    
+		</div>
+	</div>
+<div id="acc-content"><!-- done for accessibility reasons -->        <div id="content" class="site-content">
+            <div class="container">
+                <div class="not-found">
+    	
+	<span>404!</span>
+
+    <h1>The requested page cannot be found</h1>
+	
+    <p>We&#039;re really sorry! Something went wrong trying to display the page, Please try one of these instead</p>
+	
+    <form role="search" method="get" class="search-form" action="http://150.65.242.92/home/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>	
+    <a href="http://150.65.242.92/home/" class="homepage">Back to homepage</a>
+
+            </div>
+        </div>
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+	    <div class="container">
+	                  
+			<div class="site-info">
+			                        
+                <p> 
+                <span>Copyright &copy;2022 <a href="http://150.65.242.92/home/">Nguyen Lab</a>.</span>    			    <span class="by">
+                        Education Zone | Developed By                        <a rel="nofollow" href="https://rarathemes.com/" target="_blank">Rara Theme</a>.
+                        Powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>.                    </span>
+                                    </p>
+			</div><!-- .site-info -->
+		</div>
+	</footer><!-- #colophon -->
+    <div class="footer-overlay"></div>
+</div><!-- done for accessibility reasons -->
+</div><!-- #page -->
+
+<link rel='stylesheet' id='academicons-css'  href='http://150.65.242.92/home/wp-content/plugins/teachpress/includes/academicons/css/academicons.min.css?ver=5.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://150.65.242.92/home/wp-content/plugins/teachpress/includes/fontawesome/css/all.min.css?ver=5.8.6' type='text/css' media='all' />
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/plugins/embed-any-document/js/pdfobject.min.js?ver=2.7.0' id='awsm-ead-pdf-object-js'></script>
+<script type='text/javascript' id='awsm-ead-public-js-extra'>
+/* <![CDATA[ */
+var eadPublic = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/plugins/embed-any-document/js/embed-public.min.js?ver=2.7.0' id='awsm-ead-public-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"http:\/\/150.65.242.92\/home\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2' id='contact-form-7-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/owl.carousel.min.js?ver=2.2.1' id='owl-carousel-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/owlcarousel2-a11ylayer.min.js?ver=0.2.1' id='owlcarousel2-a11ylayer-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/waypoint.min.js?ver=2.0.3' id='waypoint-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/jquery.counterup.min.js?ver=1.0' id='jquery-counterup-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/all.min.js?ver=5.6.3' id='all-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/v4-shims.min.js?ver=5.6.3' id='v4-shims-js'></script>
+<script type='text/javascript' id='education-zone-custom-js-extra'>
+/* <![CDATA[ */
+var education_zone_data = {"rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-content/themes/education-zone/js/custom.min.js?ver=1.2.5' id='education-zone-custom-js'></script>
+<script type='text/javascript' src='http://150.65.242.92/home/wp-includes/js/wp-embed.min.js?ver=5.8.6' id='wp-embed-js'></script>
+
+</body>
+</html>
