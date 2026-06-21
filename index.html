@@ -6,100 +6,593 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALQAC - Automated Legal Question Answering Competition</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f7fa;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
+            padding: 2rem;
             text-align: center;
-            padding: 1rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 300;
         }
 
         main {
-            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
         }
 
-		h1 {
-            color: #EEE;
-        }
-		
-        h2 {
-            color: #333;
+        /* Featured 2026 Section */
+        .featured-section {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            color: white;
+            box-shadow: 0 20px 60px rgba(52, 152, 219, 0.25);
+            position: relative;
+            overflow: hidden;
         }
 
-        p {
-            color: #666;
+        .featured-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            z-index: 0;
         }
 
-        a {
-            color: #1a73e8;
+        .featured-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .featured-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .featured-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .featured-section .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            color: #ecf0f1;
+        }
+
+        .featured-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 1.2rem;
+            border-radius: 10px;
+            border-left: 3px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .info-item strong {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ecf0f1;
+        }
+
+        .info-item span {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .featured-section .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .featured-section a {
+            background: #ffffff;
+            color: #2980b9;
+            padding: 0.9rem 1.8rem;
+            border-radius: 8px;
             text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
 
-        a:hover {
-            text-decoration: underline;
+        .featured-section a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            background: #ecf0f1;
         }
 
-        .event {
+        /* Task Details */
+        .task-details {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
             margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .task-details h3 {
+            color: #2980b9;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .task-details p {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .task-card {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .task-card h4 {
+            color: #2980b9;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .task-card ul {
+            margin-left: 1.5rem;
+            list-style-position: inside;
+        }
+
+        .task-card li {
+            color: #2c3e50;
+            margin-bottom: 0.6rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .task-card p {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        /* Important Dates */
+        .dates-section {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            color: white;
+        }
+
+        .dates-section h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .date-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .date-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border-left: 3px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .date-item strong {
+            display: block;
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #ecf0f1;
+        }
+
+        .date-item span {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        /* Past Events */
+        .past-events {
+            margin-top: 4rem;
+        }
+
+        .past-events h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #3498db;
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .event-year-badge {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .event-card-content {
+            padding: 1.5rem;
+        }
+
+        .event-card h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .event-card p {
+            color: #555555;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .event-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-tag {
+            background: #e8f4f8;
+            color: #2980b9;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .event-card .links {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .event-card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .event-card a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+
+        footer {
+            background: #2c3e50;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+            color: #ecf0f1;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .featured-section {
+                padding: 2rem;
+            }
+
+            .featured-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .featured-info {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-section .links {
+                flex-direction: column;
+            }
+
+            .featured-section a {
+                width: 100%;
+                text-align: center;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Automated Legal Question Answering Competition (ALQAC)</h1>
+        <h1>ALQAC & ISAILD</h1>
+        <p>Automated Legal Question Answering Competition & International Symposium on AI and Legal Documents</p>
     </header>
+
     <main>
-        <div class="event">
-            <h2>ALQAC 2021</h2>
-            <p>As an associated event of KSE 2021, we are happy to announce the 1st Automated Legal Question Answering Competition (ALQAC 2021). ALQAC includes 3 tasks for each language: (1) Legal Document Retrieval, (2) Legal Textual Entailment, and (3) Legal Question Answering. For the competition, we introduce the Legal Question Answering dataset – a manually annotated dataset based on well-known statute laws in Vietnamese and Thai Language. Through the competition, we aim to develop a research community on legal support systems.</p>
-            <p><a href="https://alqac.github.io/alqac-2021/" target="_blank" rel="noopener noreferrer">ALQAC 2021 Website</a></p>
+        <!-- FEATURED 2026 SECTION -->
+        <div class="featured-section">
+            <div class="featured-content">
+                <span class="featured-badge">🎯 LATEST EVENT - 2026</span>
+                <h2>ALQAC 2026 & ISAILD 2026</h2>
+                <p class="subtitle">Legal AI Innovation in Kanazawa, Japan</p>
+
+                <div class="featured-info">
+                    <div class="info-item">
+                        <strong>📅 Dates</strong>
+                        <span>Nov 11-14, 2026</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>📍 Location</strong>
+                        <span>Kanazawa, Japan</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>🎯 Main Task</strong>
+                        <span>Case Outcome Prediction</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>🔗 Associated</strong>
+                        <span>KSE 2026</span>
+                    </div>
+                </div>
+
+                <div class="task-details" style="background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); color: white;">
+                    <h3 style="color: #ffffff;">🚀 New Task: Legal Case Outcome Prediction with Evidence Retrieval</h3>
+                    <p style="color: #ecf0f1;">ALQAC 2026 introduces an advanced shared task on Vietnamese legal case understanding. Participating systems must predict case outcomes, retrieve supporting evidence through official APIs, and identify relevant legal provisions.</p>
+                </div>
+
+                <div class="links">
+                    <a href="https://sites.google.com/view/alqac2026" target="_blank" rel="noopener noreferrer">📖 ALQAC 2026 Website</a>
+                    <a href="https://kse2026.kse-conferences.org/call-for-papers-isaild/" target="_blank" rel="noopener noreferrer">📝 ISAILD 2026 Call for Papers</a>
+                    <a href="https://cmt3.research.microsoft.com/KSE2026" target="_blank" rel="noopener noreferrer">✉️ Submit Your Paper</a>
+                </div>
+            </div>
         </div>
-        <div class="event">
-            <h2>ALQAC 2022</h2>
-            <p>As an associated event of KSE 2022, we are happy to announce the 2nd Automated Legal Question Answering Competition (ALQAC 2022). ALQAC includes 2 tasks: (1) Legal Document Retrieval, and (2) Legal Question Answering. For the competition, we introduce the Legal Question Answering dataset – a manually annotated dataset based on well-known statute laws in the Vietnamese Language. Through the competition, we aim to develop a research community on legal support systems.</p>
-            <p><a href="https://alqac.github.io/alqac-2022/" target="_blank" rel="noopener noreferrer">ALQAC 2022 Website</a></p>
+
+        <!-- 2026 BRIEF INFO -->
+        <div class="task-details">
+            <h3>📋 ALQAC 2026 Overview</h3>
+            <p>ALQAC 2026 focuses on building agentic legal AI systems that can combine case-level factual understanding, legal provision retrieval, evidence grounding, and outcome prediction on Vietnamese legal cases.</p>
+
+            <h3 style="margin-top: 2rem;">📅 Important Deadlines (UTC-12h)</h3>
+            <div class="date-grid" style="background: #ecf0f1; padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
+                <div style="color: #2c3e50;">
+                    <strong style="color: #2980b9;">Paper Submission</strong>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 1.1rem; font-weight: 700;">July 15, 2026</p>
+                </div>
+                <div style="color: #2c3e50;">
+                    <strong style="color: #2980b9;">Acceptance Notification</strong>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 1.1rem; font-weight: 700;">August 31, 2026</p>
+                </div>
+                <div style="color: #2c3e50;">
+                    <strong style="color: #2980b9;">Camera-ready</strong>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 1.1rem; font-weight: 700;">September 10, 2026</p>
+                </div>
+                <div style="color: #2c3e50;">
+                    <strong style="color: #2980b9;">Conference</strong>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 1.1rem; font-weight: 700;">November 11-14, 2026</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">🌍 ISAILD 2026</h3>
+            <p>International Symposium on Artificial Intelligence and Legal Documents - A multidisciplinary workshop gathering researchers, academics, practitioners, and policymakers to discuss advancements in AI and law.</p>
+            <p><strong>Topics:</strong> AI in legal decision-making, NLP in legal text analysis, Legal expert systems, Ethics in AI-based legal systems, AI for legal analytics, Legal chatbots, IP rights in AI era, Privacy & data protection, AI in dispute resolution, Legal education, and LLMs for legal domain.</p>
         </div>
-        <div class="event">
-            <h2>ALQAC 2023</h2>
-            <p>As an associated event of KSE 2023 & ISAILD 2023, we are happy to announce the 3rd Automated Legal Question Answering Competition (ALQAC 2023). ALQAC includes two tasks:</p>
-            <ul>
-                <li>Legal Document Retrieval</li>
-                <li>Legal Question Answering</li>
-            </ul>
-            <p>For the competition, we introduce the Legal Question Answering dataset – a manually annotated dataset based on well-known statute laws in the Vietnamese Language. Through the competition, we aim to develop a research community on legal support systems.</p>
-            <p><a href="https://sites.google.com/view/ALQAC2023" target="_blank" rel="noopener noreferrer">ALQAC 2023 Website</a></p>
-	    <p><a href="https://sites.google.com/view/ISAILD-2023" target="_blank" rel="noopener noreferrer">ISAILD 2023 Website</a></p>
+
+        <!-- PAST EVENTS -->
+        <div class="past-events">
+            <h2>📚 Previous Competitions</h2>
+            <div class="events-grid">
+                <!-- 2025 -->
+                <div class="event-card">
+                    <div class="event-year-badge">2025</div>
+                    <div class="event-card-content">
+                        <h3>ALQAC 2025</h3>
+                        <div class="event-tags">
+                            <span class="event-tag">KSE 2025</span>
+                            <span class="event-tag">ISAILD 2025</span>
+                        </div>
+                        <p>The 5th Automated Legal Question Answering Competition featuring Legal Document Retrieval and Legal Question Answering tasks on Vietnamese statute laws.</p>
+                        <div class="links">
+                            <a href="https://sites.google.com/view/ALQAC-2025" target="_blank">Website</a>
+                            <a href="https://kse2025.kse-conferences.org/call-for-papers-isaild-2025/" target="_blank">Call for Papers</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="event-card">
+                    <div class="event-year-badge">2024</div>
+                    <div class="event-card-content">
+                        <h3>ALQAC 2024</h3>
+                        <div class="event-tags">
+                            <span class="event-tag">KSE 2024</span>
+                            <span class="event-tag">ISAILD 2024</span>
+                        </div>
+                        <p>The 4th Automated Legal Question Answering Competition with tasks on Legal Document Retrieval and Legal Question Answering.</p>
+                        <div class="links">
+                            <a href="https://sites.google.com/view/ALQAC-2024" target="_blank">Website</a>
+                            <a href="https://sites.google.com/view/ISAILD-2024" target="_blank">ISAILD</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023 -->
+                <div class="event-card">
+                    <div class="event-year-badge">2023</div>
+                    <div class="event-card-content">
+                        <h3>ALQAC 2023</h3>
+                        <div class="event-tags">
+                            <span class="event-tag">KSE 2023</span>
+                            <span class="event-tag">ISAILD 2023</span>
+                        </div>
+                        <p>The 3rd Automated Legal Question Answering Competition introducing tasks on Legal Document Retrieval and Legal Question Answering.</p>
+                        <div class="links">
+                            <a href="https://sites.google.com/view/ALQAC2023" target="_blank">Website</a>
+                            <a href="https://sites.google.com/view/ISAILD-2023" target="_blank">ISAILD</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="event-card">
+                    <div class="event-year-badge">2022</div>
+                    <div class="event-card-content">
+                        <h3>ALQAC 2022</h3>
+                        <div class="event-tags">
+                            <span class="event-tag">KSE 2022</span>
+                        </div>
+                        <p>The 2nd Automated Legal Question Answering Competition featuring Legal Document Retrieval and Legal Question Answering tasks.</p>
+                        <div class="links">
+                            <a href="https://alqac.github.io/alqac-2022/" target="_blank">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021 -->
+                <div class="event-card">
+                    <div class="event-year-badge">2021</div>
+                    <div class="event-card-content">
+                        <h3>ALQAC 2021</h3>
+                        <div class="event-tags">
+                            <span class="event-tag">KSE 2021</span>
+                        </div>
+                        <p>The inaugural Automated Legal Question Answering Competition with 3 tasks including Legal Document Retrieval, Legal Textual Entailment, and Legal Question Answering in Vietnamese and Thai.</p>
+                        <div class="links">
+                            <a href="https://alqac.github.io/alqac-2021/" target="_blank">Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-	<div class="event">
-            <h2>ALQAC 2024</h2>
-            <p>As an associated event of KSE 2024 & ISAILD 2024, we are happy to announce the 4th Automated Legal Question Answering Competition (ALQAC 2024). ALQAC includes two tasks:</p>
-            <ul>
-                <li>Legal Document Retrieval</li>
-                <li>Legal Question Answering</li>
-            </ul>
-            <p>For the competition, we introduce the Legal Question Answering dataset – a manually annotated dataset based on well-known statute laws in the Vietnamese Language. Through the competition, we aim to develop a research community on legal support systems.</p>
-            <p><a href="https://sites.google.com/view/ALQAC-2024" target="_blank" rel="noopener noreferrer">ALQAC 2024 Website</a></p>
-	    <p><a href="https://sites.google.com/view/ISAILD-2024" target="_blank" rel="noopener noreferrer">ISAILD 2024 Website</a></p>
-        </div>
-	<div class="event">
-	    <h2>ALQAC 2025</h2>
-	    <p>As an associated event of KSE 2025 &amp; ISAILD 2025, we are proud to announce the 5th Automated Legal Question Answering Competition (ALQAC 2025). ALQAC 2025 includes two tasks:</p>
-	    <ul>
-	        <li>Legal Document Retrieval</li>
-	        <li>Legal Question Answering</li>
-	    </ul>
-	    <p>The competition introduces a manually annotated Legal Question Answering dataset based on well-known Vietnamese statute laws. We aim to foster a research community on legal support systems globally.</p>
-	    <p><a href="https://sites.google.com/view/ALQAC-2025" target="_blank" rel="noopener noreferrer">ALQAC 2025 Website</a></p>
-	    <p><a href="https://kse2025.kse-conferences.org/call-for-papers-isaild-2025/" target="_blank" rel="noopener noreferrer">ISAILD 2025 – Call for Papers</a></p>
-	</div>
     </main>
+
+    <footer>
+        <p><strong>ALQAC & ISAILD</strong> - Building Intelligent Legal Support Systems</p>
+        <p>&copy; 2021-2026 Automated Legal Question Answering Competition & International Symposium on AI and Legal Documents</p>
+    </footer>
 </body>
 
 </html>
